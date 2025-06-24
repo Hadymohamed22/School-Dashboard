@@ -93,7 +93,7 @@ function Dashboard() {
         <StatisticBox iconText="calendar" title="Events" num="40" />
         <StatisticBox iconText="eat" title="Foods" num="32K" />
       </div>
-      <div className="school-performance p-7 md:p-8 lg:p-9 bg-white rounded-xl md:rounded-3xl my-8">
+      <div className="school-performance px-0 py-7 md:p-8 lg:p-9 bg-white rounded-xl md:rounded-3xl my-8">
         <header className="flex flex-col md:flex-row gap-y-3 justify-between items-center">
           <BoxTitle title="School Performance" />
           <div className="info flex items-center gap-5 md:gap-6 lg:gap-7">
@@ -163,7 +163,7 @@ function Dashboard() {
             </div>
           </header>
           <div className="table-container overflow-x-auto w-full h-full">
-            <table className="calendar w-full h-[90%] mt-3 min-w-[300px]">
+            <table className="calendar w-full h-[80%] md:h-[85%] lg:h-[90%] mt-3 min-w-[300px]">
               <thead>
                 <tr className="text-[#A098AE]">
                   <td>Sun</td>
@@ -329,7 +329,7 @@ function Dashboard() {
               {studentsPageNumbers.map((e) => {
                 return (
                   <div
-                    className={`num-box flex justify-center items-center w-7 h-7 md:w-8 md:h-8 text-sm md:text-base rounded-full border-2 border-[#A098AE] text-[#A098AE] transition duration-300 hover:bg-main/30 hover:border-main/30 hover:text-white ${
+                    className={`num-box flex justify-center items-center w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-xs md:text-sm lg:text-base rounded-full border-2 border-[#A098AE] text-[#A098AE] transition duration-300 hover:bg-main/30 hover:border-main/30 hover:text-white ${
                       e == currentStudentsPage ? "active" : ""
                     }`}
                     key={e}

@@ -756,6 +756,10 @@ video {
   height: 100vh;
 }
 
+.h-\[80\%\] {
+  height: 80%;
+}
+
 .min-h-10 {
   min-height: 2.5rem;
 }
@@ -812,6 +816,10 @@ video {
   width: 117%;
 }
 
+.w-\[300px\] {
+  width: 300px;
+}
+
 .w-\[30px\] {
   width: 30px;
 }
@@ -835,10 +843,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[300px\] {
-  width: 300px;
 }
 
 .min-w-0 {
@@ -924,17 +928,6 @@ video {
 
 .animate-pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping {
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 .cursor-pointer {
@@ -1174,6 +1167,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1194,19 +1192,14 @@ video {
   padding-bottom: 1rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-9 {
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .pb-5 {
@@ -1565,6 +1558,10 @@ video {
     height: auto;
   }
 
+  .md\:h-\[85\%\] {
+    height: 85%;
+  }
+
   .md\:min-h-11 {
     min-height: 2.75rem;
   }
@@ -1597,20 +1594,16 @@ video {
     width: 20%;
   }
 
+  .md\:w-\[350px\] {
+    width: 350px;
+  }
+
   .md\:w-\[60\%\] {
     width: 60%;
   }
 
   .md\:w-\[60px\] {
     width: 60px;
-  }
-
-  .md\:w-\[400px\] {
-    width: 400px;
-  }
-
-  .md\:w-\[350px\] {
-    width: 350px;
   }
 
   .md\:min-w-11 {
@@ -1765,6 +1758,10 @@ video {
     height: 64px;
   }
 
+  .lg\:h-\[90\%\] {
+    height: 90%;
+  }
+
   .lg\:min-h-\[28px\] {
     min-height: 28px;
   }
@@ -1801,20 +1798,16 @@ video {
     width: 15%;
   }
 
+  .lg\:w-\[400px\] {
+    width: 400px;
+  }
+
   .lg\:w-\[50\%\] {
     width: 50%;
   }
 
   .lg\:w-\[70px\] {
     width: 70px;
-  }
-
-  .lg\:w-\[450px\] {
-    width: 450px;
-  }
-
-  .lg\:w-\[400px\] {
-    width: 400px;
   }
 
   .lg\:min-w-\[28px\] {
