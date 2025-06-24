@@ -23,7 +23,7 @@ import printStudentInfo from "../utils/printStudentInfo";
 import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
 import StudentClass from "../components/StudentClass";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchStudents } from "../store/slices/studentsSlice";
+import { deleteStudent, fetchStudents } from "../store/slices/studentsSlice";
 import { handlePrevPage } from "../utils/handlePrevPage";
 import { handleNextPage } from "../utils/handleNextPage";
 
@@ -300,7 +300,12 @@ function Dashboard() {
                         >
                           <BsPrinter className="text-[#A098AE] transition duration-300 hover:text-main text-lg md:text-2xl cursor-pointer" />
                         </div>
-                        <div className="trash">
+                        <div
+                          className="trash"
+                          onClick={() => {
+                            dispatch(deleteStudent(e.id));
+                          }}
+                        >
                           <FaRegTrashCan className="text-[#A098AE] transition duration-300 hover:text-red-600 text-lg md:text-2xl cursor-pointer" />
                         </div>
                       </div>
