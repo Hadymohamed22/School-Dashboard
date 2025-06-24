@@ -41,4 +41,4 @@ The design includes key sections you’d find in a typical school management pan
 
 ## LIVE DEMO :
 
-👉 [Preview Website](https://your-live-link.vercel.app/)  
+👉 [[Preview Website](https://school-dashboard-azure.vercel.app/)] 
